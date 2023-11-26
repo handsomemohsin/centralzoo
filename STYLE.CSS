@@ -1,0 +1,403 @@
+.first-header a {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    /* margin-left: 30px; */
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+
+}
+
+.first-header a:hover {
+    text-decoration: none;
+    background-color: #0D587C;
+}
+
+.first-header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.membership {
+    margin-right: 80px;
+    background-color: #07A2C6;
+}
+
+.border {
+    border: solid black 1px;
+}
+
+.b-ticket {
+    background-color: #838C3E;
+}
+
+.g-now {
+    background-color: #D96704;
+}
+
+.open-now-text {
+    font-size: 60px;
+    font-weight: 700;
+}
+.aboutus-text {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.header-text {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+
+.bt-btn {
+    background-color: #D27600;
+    border: none;
+    border-radius: 5px;
+    width: 170px;
+    height: 40px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.director-btn {
+    background-color: #D27600;
+    border: none;
+    border-radius: 5px;
+    width: auto;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.black-screen {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.1s ease-in-out;
+}
+
+.outer-screen:hover .black-screen {
+    opacity: 0;
+}
+
+.hippo-pic {
+    height: 300px;
+    width: 100%;
+}
+
+.larki-ki-pic {
+    height: 300px;
+    width: 100%;
+}
+
+.sy-zoo {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.sy-txt {
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.sy-cont {
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+}
+
+
+.bottom-card {
+    height: 640px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hemloo-jee {
+    margin-top: 50px;
+}
+
+.for-mob {
+    display: none;
+}
+
+.navyy {
+    position: absolute;
+    float: right;
+    right: 0;
+}
+
+.navyy a {
+    margin-left: 80px;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+@media(max-width: 1100px) {
+    .navyy a {
+        margin-left: 40px;
+        color: white;
+        font-weight: 700;
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .hemloo-jee {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width: 1190px) {
+    .bottom-card {
+        height: 780px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 991px) {
+    .ghaas {
+        display: none;
+    }
+    .first-header {
+        display: none;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+    .mai-nhi-dikhaoon-ga {
+        display: none;
+    }
+
+    .for-mob {
+        display: block;
+    }
+
+    .for-pc {
+        display: none;
+    }
+
+    .int-txt {
+        font-size: 18px;
+    }
+
+    .hippo-pic {
+        height: 200px;
+        padding-left: 15px;
+    }
+
+    .larki-ki-pic {
+        height: 200px;
+        padding-right: 15px;
+    }
+
+    .sy-zoo {
+        font-size: 27px;
+        font-weight: 700;
+    }
+
+
+    .sy-txt {
+        font-size: 15px;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+    }
+
+    .sy-cont {
+        padding-left: 15px;
+    }
+}
+.animal-imgs {
+    width: 240px;
+    object-fit: cover;
+    height: 284.88px;
+
+}
+@media(max-width: 540px) {
+    .animal-imgs {
+        width: 280px;
+        height: 284.88px;
+    }
+}
+
+@media(max-width: 281px) {
+    .animal-imgs {
+        width: 240px;
+        height: 284.88px;
+    }
+}
+@media(max-width: 850px) {
+    .membership {
+        margin-right: 0px;
+    }
+
+    .aboutus-text {
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 605px) {
+    .first-header {
+        display: none;
+    }
+    .aboutus-text {
+        font-size: 30px;
+    }
+}
+
+.patta {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 150px;
+}
+
+.panchva-patta {
+    position: fixed;
+    top: 0;
+    left: 50px;
+    width: 150px;
+}
+
+.tri {
+    height: 0;
+    width: 0;
+    border-top: 40px solid transparent;
+    border-left: 40px solid white;
+    border-bottom: 40px solid transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.tri-for-larki {
+    height: 0;
+    width: 0;
+    right: 0;
+    border-top: 40px solid transparent;
+    border-right: 40px solid white;
+    border-bottom: 40px solid transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.doosra-patta {
+    position: absolute;
+    right: 0;
+    top: -20px;
+    width: 80px;
+}
+
+.chatta-patta {
+    position: fixed;
+    left: 0;
+
+    width: 80px;
+}
+
+.chotha-patta {
+    position: fixed;
+    right: 0;
+    bottom: -20px;
+    width: 80px;
+}
+
+.bottom-heading {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.bottom-txt {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.logo {
+    margin-top: -50px;
+    border-radius: 10px
+}
+
+.menu-btn {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+
+}
+
+.menu-cont {
+    overflow-y: auto;
+    transition: 0.3s ease-in-out;
+    /* display: none; */
+    width: 0%;
+    height: 100vh;
+    position: absolute;
+    position: fixed;
+    z-index: 30;
+}
+
+.close-icon {
+    font-size: 30px;
+    position: fixed;
+    color: white;
+    right: 2rem;
+    top: 1.5rem;
+}
+
+.menu-cont a {
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+
+.star-rating {
+    font-size: 0;
+    transform: rotateY(180deg);
+    float: left;
+    position: relative;
+  }
+
+  .star-rating input {
+    display: none; /* Hide the default radio input */
+  }
+
+  .star-rating label {
+    display: inline-block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ccc;
+  }
+
+  .star-rating input:checked + label,
+  .star-rating input:checked ~ label {
+    color: #ffc107; /* Change color for checked (selected) stars */
+  }

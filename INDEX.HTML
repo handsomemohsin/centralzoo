@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="STYLE.CSS">
+
+
+
+    <title>CENTRAL ZOO</title>
+</head>
+
+<body>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
+    <div class="container-fluid first-header p-0" style="background-color: #A65523;">
+        <a href="LOGIN.HTML" class="py-3 px-4"><i class="fa-regular fa-user"></i> Account Login</a>
+        <a href="" class="py-3 px-4 g-now">Give Now</a>
+        <a href="" class="py-3 px-4 b-ticket">Buy Tickets</a>
+        <a href="" class="membership py-3 px-4">Membership</a>
+    </div>
+    <div class="container-fluid p-0" style="position: relative;  background-size: cover;">
+        <img style="position: absolute; width: 100%; height: 100%; object-fit: cover;"
+            src="https://dallaszoo.imgix.net/wp-content/uploads/2019/09/17125758/2023-DZL-Kickoff-gorilla-slider-e1700247498354.jpg?fit=crop&crop=faces&q=60&auto=format&w=1360&h=682"
+            alt="">
+
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg for-pc" style="background-color: transparent;">
+                <a class="navbar-brand" href="INDEX.HTML"><img src="ASSETS/LOGO.jpeg" class="logo" width="160px"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto navyy">
+                        <li class="nav-item">
+                            <a class="nav-link" href="INDEX.HTML">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Animals
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color: #2F2F2F;">
+                                <a style="width: 100%;margin-left: 0; color: #838C3E;" class="dropdown-item"
+                                    href="ANIMALS.HTML">Animals</a>
+                                <a style="width: 100%;margin-left: 0; color: #838C3E;" class="dropdown-item"
+                                    href="WATERANIMALS.HTML">Water Animals</a>
+                                <a style="width: 100%;margin-left: 0; color: #838C3E;" class="dropdown-item"
+                                    href="#">Wild Animals</a>
+                                <a style="width: 100%;margin-left: 0; color: #838C3E;" class="dropdown-item"
+                                    href="#">Birds</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ABOUTUS.HTML">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="CONTACTUS.HTML">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="FEEDBACK.HTML" style="margin-right: 75px;">Feedback</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </nav>
+
+
+
+
+            <div class="menu">
+                <i class="fa-solid fa-bars menu-btn for-mob" id="menu-btn"></i>
+
+                <div class="menu-cont" id="menu" style="background-color: #2F2F2F;">
+                    <img src="ASSETS/LOGO.jpeg"
+                        style="width: 140px; left: 50%; transform: translateX(-50%); position: relative; border-radius: 10px; top: 3%;"
+                        alt="">
+
+                    <i class="fa-solid fa-xmark close-icon" id="close-menu"></i>
+
+                    <div class="container mt-5">
+                        <a href="INDEX.HTML">Home</a>
+                        <a href="ANIMALS.HTML">Animals</a>
+                        <a href="">Water Animals</a>
+                        <a href="">Wild Animals</a>
+                        <a href="">Birds</a>
+
+
+                        <a href="ABOUTUS.HTML">About Us</a>
+                        <a href="CONTACTUS.HTML">Contact Us</a>
+                        <a href="">Events</a>
+                        <a href="FEEDBACK.HTML">Feedback</a>
+                        <button
+                            style="background-color: #D96704; margin-top: 25px; border-radius: 5px; padding: 10px; left: 50%; transform: translateX(-50%); position: relative; border: none;"
+                            class="login-btn mb-5"><a href="LOGIN.HTML" style="margin-top: 0px;" class=""><i
+                                    class="fa-regular fa-user"></i> Account Login</a></button>
+                    </div>
+                    <img class="panchva-patta"
+                        src="https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/icons/foliage_sponsor_right.svg"
+                        alt="" id="patta1">
+
+                    <img class="chotha-patta"
+                        src="https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/icons/foliage_text-image_right2.svg"
+                        alt="" id="patta2">
+
+                    <img class="chatta-patta" id="patta3"
+                        src="https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/icons/foliage_cards_left.svg"
+                        alt="" style="position: fixed; bottom: 0; right: 30px; width: 150px;">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-0 py-5">
+            <div class="col-lg-6 px-5">
+                <h1 class="text-light pt-5 open-now-text">NOW OPEN!</h1>
+                <p class="header-text text-light">Create magical holiday memories with us at Dallas Zoo Lights Presented
+                    by Reliant – now with more than two million dazzling lights, enchanting light shows, and plenty of
+                    festive fun!</p>
+
+                <div class="button" style="position: relative; width: 170px; height: 40px; border-radius: 5px;">
+
+                    <button style="z-index: 10; overflow: hidden;" class="bt-btn" onmouseover="a1()"
+                        onmouseleave="a1l()"><span class=""
+                            style="z-index: 20; display: flex; justify-content: center; align-items: center; position: absolute; width: 80%; top: 0; left: 0; height: 100%; ">Buy
+                            Tickets</span> <i class="fa-solid fa-chevron-right"
+                            style="transition: 1s ease-in-out; position: absolute; width: 20%; height: 100%; display: flex; justify-content: center; align-items: center; top: 0;"
+                            id="arrow1"></i>
+                        <div style="z-index: 15;" class="obj" id="a1b1"></div>
+                        <img class="animate-img1" id="animate-img-1"
+                            style="position: absolute; top: 0; height: 100%; width: 24px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;"
+                            src="https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/icons/button-side-orange.svg"
+                            alt="">
+                    </button>
+
+
+                    <style>
+                        .obj {
+                            width: 0%;
+                            transition: 1s ease-in-out;
+                            position: absolute;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                            background-color: #A65523;
+                            clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
+                            border-bottom-left-radius: 5px;
+                            border-top-left-radius: 5px;
+                        }
+
+
+                        .animate-img1 {
+                            transition: 1s ease-in-out;
+                            position: absolute;
+                            top: 0;
+                            height: 100%;
+                            width: 24px;
+                            border-top-right-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                            right: 0;
+                            /* Initial position */
+                            opacity: 1;
+                        }
+
+                        #arrow1 {
+                            right: 5px;
+
+                        }
+                    </style>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-5" style="position: relative;">
+        <img class="patta"
+            src="https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/icons/foliage_sponsor_right.svg"
+            alt="">
+
+
+
+    </div>
+    <script>
+        let menuBtn = document.getElementById('menu-btn');
+        let menu = document.getElementById('menu');
+        let closeMenu = document.getElementById('close-menu');
+        let patta1 = document.getElementById('patta1');
+        let patta2 = document.getElementById('patta2');
+        let patta3 = document.getElementById('patta3');
+
+        closeMenu.style.display = 'none'
+        patta1.style.display = 'none'
+        patta2.style.display = 'none'
+        patta3.style.display = 'none'
+
+        menuBtn.addEventListener('click', () => {
+            menu.style.display = 'block'
+            menu.style.transition = '0.2s ease-in'
+            menu.style.width = '100%'
+            setTimeout(() => {
+                closeMenu.style.display = 'block'
+
+            }, 190);
+            setTimeout(() => {
+                patta1.style.display = 'block'
+                patta2.style.display = 'block'
+                patta3.style.display = 'block'
+            }, 100);
+        })
+
+        closeMenu.addEventListener('click', () => {
+            menu.style.transition = '0.2s'
+            menu.style.width = '0%'
+
+            closeMenu.style.display = 'none'
+            // menu.style.display = 'none'
+            patta1.style.display = 'none'
+            patta2.style.display = 'none'
+            patta3.style.display = 'none'
+        })
+    </script>
+
+    <div class="container-fluid m-0 for-pc">
+        <div class="row pt-5">
+            <div class="col-lg-6 sy-cont" data-aos="fade-up">
+                <h3 style="color: #83933E;" class="sy-zoo mt-4">SUPPORT YOUR ZOO!</h3>
+                <p style="font-weight: 600;" class="mt-3 sy-txt">High-quality diets are essential to the health and
+                    happiness of the 2,000+ animals that call your Dallas Zoo home. Make a tax-deductible year-end gift
+                    to help keep our pantry stocked this holiday season and all year long!</p>
+
+                    <div class="button" style="position: relative; width: 170px; height: 40px; border-radius: 5px;">
+
+                        <button style="z-index: 10; overflow: hidden;" class="bt-btn" onmouseover="a2()"
+                            onmouseleave="a2l()"><span class=""
+                                style="z-index: 20; display: flex; justify-content: center; align-items: center; position: absolute; width: 80%; top: 0; left: 0; height: 100%; ">GIVE TODAY</span> <i class="fa-solid fa-chevron-right"
+                                style="transition: 1s ease-in-out; position: absolute; width: 20%; height: 100%; display: flex; justify-content: center; align-items: center; top: 0;"
+                                id="arrow2"></i>
+                            <div style="z-index: 15;" class="obj" id="a2b2"></div>
+                            <img class="animate-img1" id="animate-img-2"
+                                style="position: absolute; top: 0; height: 100%; width: 24px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;"
+                                src="https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/icons/button-side-orange.svg"
+                                alt="">
+                        </button>
+    
+    
+                        <style>
+                            .obj {
+                                width: 0%;
+                                transition: 1s ease-in-out;
+                                position: absolute;
+                                height: 100%;
+                                top: 0;
+                                left: 0;
+                                background-color: #A65523;
+                                clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
+                            }
+    
+    
+                            .animate-img2 {
+                                transition: 1s ease-in-out;
+                                position: absolute;
+                                top: 0;
+                                height: 100%;
+                                width: 24px;
+                                border-top-right-radius: 5px;
+                                border-bottom-right-radius: 5px;
+                                right: 0;
+                                /* Initial position */
+                                opacity: 1;
+                            }
+    
+                            #arrow2 {
+                                right: 5px;
+    
+                            }
+                        </style>
+    
+    
+                    </div>
+            </div>
+            <div class="col-lg-6 p-0">
+                <img style="" class="hippo-pic"
+                    src="https://dallaszoo.imgix.net/wp-content/uploads/2019/09/10131126/AnnualFund-Hippo-1-e1699643502544.jpg?fit=crop&crop=faces&auto=format&q=60&w=662&h=331"
+                    alt="">
+
+                <div class="tri"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid m-0 for-mob">
+        <div class="row pt-5">
+
+            <div class="col-lg-6 p-0">
+                <img style="" class="hippo-pic"
+                    src="https://dallaszoo.imgix.net/wp-content/uploads/2019/09/10131126/AnnualFund-Hippo-1-e1699643502544.jpg?fit=crop&crop=faces&auto=format&q=60&w=662&h=331"
+                    alt="">
+
+                <div class="tri"></div>
+            </div>
+            <div class="col-lg-6 sy-cont" data-aos="fade-up">
+                <h3 style="color: #83933E;" class="sy-zoo mt-4">SUPPORT YOUR ZOO!</h3>
+                <p style="font-weight: 600;" class="mt-3 sy-txt">High-quality diets are essential to the health and
+                    happiness of the 2,000+ animals that call your Dallas Zoo home. Make a tax-deductible year-end gift
+                    to help keep our pantry stocked this holiday season and all year long!</p>
+
+                <button class="bt-btn">Give Today!</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid m-0 pb-5" style="position: relative;">
+
+        <div class="row pt-5">
+            <div class="col-lg-6 p-0">
+                <img style="" class="larki-ki-pic"
+                    src="https://dallaszoo.imgix.net/wp-content/uploads/2023/10/17155018/adopts-holiday-BR8A3681.jpg?fit=crop&crop=faces&auto=format&q=60&w=662&h=331"
+                    alt="">
+
+                <div class="tri-for-larki"></div>
+            </div>
+            <div class="col-lg-6 sy-cont" data-aos="fade-up">
+                <h3 style="color: #83933E;" class="sy-zoo mt-4">ADOPT-AN-ANIMAL</h3>
+                <p style="font-weight: 600;" class="mt-3 sy-txt">Give a gift that gives back — a symbolic adoption.
+                    Packages include a super-soft plush, two tickets to the Zoo, a custom certificate, a Zookeeper
+                    report, and more! NEW SPECIES ALERT: lemurs, rattlesnakes, and otters now available for adoption!
+                </p>
+
+                <div class="button" style="position: relative; width: 170px; height: 40px; border-radius: 5px;">
+
+                    <button style="z-index: 10; overflow: hidden;" class="bt-btn" onmouseover="a3()"
+                        onmouseleave="a3l()"><span class=""
+                            style="z-index: 20; display: flex; justify-content: center; align-items: center; position: absolute; width: 80%; top: 0; left: 0; height: 100%; ">Buy
+                            Tickets</span> <i class="fa-solid fa-chevron-right"
+                            style="transition: 1s ease-in-out; position: absolute; width: 20%; height: 100%; display: flex; justify-content: center; align-items: center; top: 0;"
+                            id="arrow3"></i>
+                        <div style="z-index: 15;" class="obj" id="a3b3"></div>
+                        <img class="animate-img3" id="animate-img-3"
+                            style="position: absolute; top: 0; height: 100%; width: 24px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;"
+                            src="https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/icons/button-side-orange.svg"
+                            alt="">
+                    </button>
+
+
+                    <style>
+                        .obj {
+                            width: 0%;
+                            transition: 1s ease-in-out;
+                            position: absolute;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                            background-color: #A65523;
+                            clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
+                        }
+
+
+                        .animate-img3 {
+                            transition: 1s ease-in-out;
+                            position: absolute;
+                            top: 0;
+                            height: 100%;
+                            width: 24px;
+                            border-top-right-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                            right: 0;
+                            /* Initial position */
+                            opacity: 1;
+                        }
+
+                        #arrow3 {
+                            right: 5px;
+
+                        }
+                    </style>
+
+
+                </div>
+                <img class="doosra-patta"
+                    src="https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/icons/foliage_text-image_right2.svg"
+                    alt="">
+
+            </div>
+
+
+        </div>
+        <img class="teesra-patta"
+            src="https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/icons/foliage_cards_left.svg" alt=""
+            style="position: absolute; bottom: 0; left: 30px; width: 150px;">
+    </div>
+
+    <div class="container-fluid"
+        style="background-image: url('https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/images/bg-orange_animal_glyphs.png');">
+        <h1 class="text-light text-center int-txt py-4" style="font-weight: 800;">YOU MIGHT BE INTERESTED IN…</h1>
+
+        <div class="row">
+            <div class="col-lg-4" style="height: 100%;">
+                <div class="container mb-5" style="height: 100%;">
+                    <div class="card bottom-card" style="border: none;" data-aos="fade-up">
+                        <img style="border-top-left-radius: 5px; border-top-right-radius: 5px;"
+                            src="https://dallaszoo.imgix.net/wp-content/uploads/2023/10/17150018/carousel-BR8A3794.jpg?fit=crop&crop=faces&q=60&auto=format&w=359&h=180"
+                            alt="">
+                        <div class="container px-4">
+                            <p style="color: #0D587C;" class="bottom-heading">Holiday Wishlist</p>
+                            <p class="bottom-txt">Prepare for the holidays by adding some wild to their wishlist. Find
+                                the perfect gift for
+                                your loved ones from a year of membership to gift certificates for exciting Zoo
+                                experiences and more during this season of giving and all year round.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4" style="height: 100%;">
+                <div class="container mb-5" style="height: 100%;">
+                    <div class="card bottom-card" style="border: none;" data-aos="fade-up">
+                        <img style="border-top-right-radius: 5px; border-top-left-radius: 5px;"
+                            src="https://dallaszoo.imgix.net/wp-content/uploads/2019/09/18121647/Camps-girl-in-leaves.jpg?fit=crop&crop=faces&q=60&auto=format&w=359&h=180"
+                            alt="">
+                        <div class="container px-4">
+                            <p style="color: #0D587C;" class="bottom-heading">Wild Adventures Camp</p>
+                            <p class="bottom-txt">It’s that time of the year when young campers can join our Wild
+                                Adventures Camp to learn, experience, and explore the wonder that awaits throughout the
+                                Dallas Zoo. Enroll your kiddos today for some wild fun!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4" style="height: 100%;">
+                <div class="container mb-5" style="height: 100%;">
+                    <div class="card bottom-card" style="border: none;" data-aos="fade-up">
+                        <img src="https://dallaszoo.imgix.net/wp-content/uploads/2023/01/30124446/gorillatrek-web-2.jpg?fit=crop&crop=faces&q=60&auto=format&w=359&h=180"
+                            alt="" style="border-top-right-radius: 5px; border-top-left-radius: 5px;">
+
+                        <div class="container px-4">
+                            <p style="color: #0D587C;" class="bottom-heading">Virtual Reality at the Zoo</p>
+                            <p class="bottom-txt">Get up close and personal to mountain gorillas in their natural
+                                habitat in this new 360-degree virtual reality film. Head over to the new location at
+                                The Grove to check out Gorilla Trek, our one-of-a-kind VR experience for all to enjoy.
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid px-0 py-5"
+        style="background-image: url('https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/images/bg-blue_lizard.png');">
+        <div class="container" style="background-color: white; border-radius: 5px;">
+            <div class="row">
+                <div class="col-lg-3 p-0">
+                    <img class="mai-nhi-dikhaoon-ga"
+                        src="https://images.pexels.com/photos/1799881/pexels-photo-1799881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        width="100%" alt="">
+                </div>
+                <div class="col-lg-9 px-5 py-4" style="">
+                    <h2 style="color: #83933E;" class="sy-zoo hemloo-jee">MEMBERSHIP FLASH SALE</h2>
+                    <p class="sy-txt" style="font-weight: 600; letter-spacing: 0px;">Join to save 10% on a year of
+                        membership at the Passport level or above, now through November 27, 2023! Get free admission and
+                        parking, invitations to exclusive events, and discounts throughout the Zoo.</p>
+                    <button class="bt-btn">Save Now!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="position: relative;">
+        <h1 class="sy-zoo pt-5 text-center" style="color: #838C3E;" data-aos="zoom-in">OUR PARTNERS MAKE AN IMPACT</h1>
+        <img style="width: 12%; left: 50%; transform: translateX(-50%); position: relative;"
+            src="https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/icons/wavy-line-large-orange.svg"
+            alt="">
+
+
+        <div class="row">
+            <div class="col-sm-4" style="margin-top: 50px;" data-aos="fade-up">
+                <img width="200px" style="left: 50%; top: 70%; transform: translate(-50%, -50%); position: relative;"
+                    src="https://dallaszoo.imgix.net/wp-content/uploads/2019/09/26141734/NexPoint%E2%80%93Logotype%E2%80%93Black%E2%80%93RGB%E2%80%93Large.png?fit=max&q=70&auto=format&w=201&h=80"
+                    alt="">
+            </div>
+            <div class="col-sm-4" style="margin-top: 50px;" data-aos="fade-up">
+                <img width="200px" style="left: 50%; top: 50%; transform: translate(-50%, -50%); position: relative;"
+                    src="https://dallaszoo.imgix.net/wp-content/uploads/2019/09/11114902/reliant.png?fit=max&q=70&auto=format&w=201&h=80"
+                    alt="">
+            </div>
+            <div class="col-sm-4" style="margin-top: 50px;" data-aos="fade-up">
+                <img width="100px" style="left: 50%; top: 50%; transform: translate(-50%, -50%); position: relative;"
+                    src="https://dallaszoo.imgix.net/wp-content/uploads/2019/09/23154909/PEP_Logo_Globe_FullColor_RGB.png?fit=max&q=70&auto=format&w=201&h=80"
+                    alt="">
+            </div>
+
+            <div class="col-sm-4" style="margin-top: 50px;" data-aos="fade-up">
+                <img width="100px" style="left: 50%; top: 50%; transform: translate(-50%, -50%); position: relative;"
+                    src="https://dallaszoo.imgix.net/wp-content/uploads/2019/10/30120020/AAZA_rgb.jpg?fit=max&q=70&auto=format&w=201&h=80"
+                    alt="">
+            </div>
+            <div class="col-sm-4" style="margin-top: 50px;" data-aos="fade-up">
+                <img width="100px" style="left: 50%; top: 50%; transform: translate(-50%, -50%); position: relative;"
+                    src="https://i.pinimg.com/564x/3b/e8/24/3be824ec80ffbd519c860b6562a0e9f3.jpg" alt="">
+            </div>
+            <div class="col-sm-4" style="margin-top: 50px;" data-aos="fade-up">
+                <img width="100px" style="left: 50%; top: 50%; transform: translate(-50%, -50%); position: relative;"
+                    src="data:image/png;base64,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"
+                    alt="">
+            </div>
+
+            <div class="col-sm-12 my-5" style="margin-top: 50px;" data-aos="fade-up">
+                <img width="280px" style="left: 50%; top: 50%; transform: translate(-50%, -50%); position: relative;"
+                    src="https://dallaszoo.imgix.net/wp-content/uploads/2020/05/07122639/KultureCity-SensoryCertified-2019-image.jpg"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid" style="background-color: #2F2F2F;">
+        <div class="row py-5">
+            <div class="col-lg-6 py-4" style="position: relative;">
+                <img class="for-pc" style="
+                position: absolute;
+                top: 0;
+                background-repeat: repeat-x;
+                width: 100%;
+                right: 0;
+                width: 10px;
+                height: 100%;"
+                    src="https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/icons/wavy-line-vertical-orange.svg"
+                    alt="">
+                <div class="row">
+                    <div class="col-6">
+                        <img style="border-radius: 10px; width: 100px; left: 50%; top: 50%; transform: translate(-50%, -50%); position: relative;"
+                            src="https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/icons/Dallas_Zoo_Logo_Vertical.svg"
+                            alt="">
+                    </div>
+                    <div class="col-6">
+                        <div class="container"
+                            style="top: 50%; transform: translateY(-50%); position: relative; text-align: start;">
+                            <p class="text-light mt-2 mb-0" style="font-weight: 700;">Central Zoo</p>
+                            <p class="text-light m-0" style="font-weight: 700;">650 S. R. L. Thornton
+                                Freeway</p>
+                            <p class="text-light m-0" style="font-weight: 700;">Dallas, TX 75203</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row mt-5" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="col-auto">
+                            <a href="ABOUTUS.HTML" class="text-center text-light" style="font-weight: 700;">About</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="CONTACTUS.HTML" class="text-center text-light"
+                                style="font-weight: 700;">Contact</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="text-center text-light" style="font-weight: 700;">Privacy Policy</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="text-center text-light" style="font-weight: 700;">Site Map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 py-4">
+                <h2 class=" footer-text" style="color: #838C3E; font-weight: 700;">Contact Us</h2>
+                <p class="text-light footer-text">Stay up to date with what's happening at the Dallas Zoo.</p>
+                <form action="#" onsubmit="submitForm(); return false;">
+                    <input type="text" class="form-control mt-2" style="border: none;" placeholder="Enter Your Name"
+                        name="" id="name">
+                    <input type="text" class="form-control mt-2" style="border: none;" placeholder="Enter Your Email"
+                        name="" id="email">
+                    <textarea name="" class="form-control mt-2" style="border: none;" id="message" cols="30"
+                        rows="4">Enter Your Message</textarea>
+                    <button class="bt-btn mt-3"> Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+
+        function submitForm() {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let msg = document.getElementById('message').value;
+            console.log("FORM HAS BEEN SUBMITTED!");
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "mhassanjavedd@gmail.com",
+                Password: "FD8C8E11BE2B055A0F73F2043F39333A6CCC",
+                To: `${email}`,
+                From: "mhassanjavedd@gmail.com",
+                Subject: `CENTRAL ZOO FORM SUBMITTED`,
+                Body: `Name: ${name}<br>Message: ${msg}`,
+            });
+            
+        }
+
+    </script>
+
+    <script>
+        let a1b1 = document.getElementById('a1b1');
+        let arrow1 = document.getElementById('arrow1');
+        let ani_img_1 = document.getElementById('animate-img-1');
+
+        let a1 = () => {
+            a1b1.style.width = '90%';
+            arrow1.style.right = '-6px';
+            ani_img_1.style.right = '-24px';
+            ani_img_1.style.opacity = '0'; // Make the image visible
+        };
+
+        let a1l = () => {
+            a1b1.style.width = '0%';
+            arrow1.style.right = '5px';
+            ani_img_1.style.right = '0px';
+            ani_img_1.style.opacity = '1'; // Make the image invisible
+        };
+
+        let a2b2 = document.getElementById('a2b2');
+        let arrow2 = document.getElementById('arrow2');
+        let ani_img_2 = document.getElementById('animate-img-2');
+
+        let a2 = () => {
+            a2b2.style.width = '90%';
+            arrow2.style.right = '-6px';
+            ani_img_2.style.right = '-24px';
+            ani_img_2.style.opacity = '0'; // Make the image visible
+        };
+
+        let a2l = () => {
+            a2b2.style.width = '0%';
+            arrow2.style.right = '5px';
+            ani_img_2.style.right = '0px';
+            ani_img_2.style.opacity = '1'; // Make the image invisible
+        };
+
+        let a3b3 = document.getElementById('a3b3');
+        let arrow3 = document.getElementById('arrow3');
+        let ani_img_3 = document.getElementById('animate-img-3');
+
+        let a3 = () => {
+            a3b3.style.width = '90%';
+            arrow3.style.right = '-6px';
+            ani_img_3.style.right = '-24px';
+            ani_img_3.style.opacity = '0'; // Make the image visible
+        };
+
+        let a3l = () => {
+            a3b3.style.width = '0%';
+            arrow3.style.right = '5px';
+            ani_img_3.style.right = '0px';
+            ani_img_3.style.opacity = '1'; // Make the image invisible
+        };
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>

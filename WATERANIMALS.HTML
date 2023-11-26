@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="STYLE.CSS">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <title>CENTRAL ZOO</title>
+</head>
+
+<body>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
+    <div class="container-fluid first-header p-0" style="background-color: #A65523;">
+        <a href="LOGIN.HTML" class="py-3 px-4"><i class="fa-regular fa-user"></i> Account Login</a>
+        <a href="" class="py-3 px-4 g-now">Give Now</a>
+        <a href="" class="py-3 px-4 b-ticket">Buy Tickets</a>
+        <a href="" class="membership py-3 px-4">Membership</a>
+    </div>
+    <div class="container-fluid p-0" style="position: relative;  background-size: cover;">
+        <img style="position: absolute; width: 100%; height: 100%; object-fit: cover;" src="https://www.columbuszoo.org/themes/tiki/css/img/green-banner.jpg" alt="">
+        <img src="https://www.columbuszoo.org/themes/tiki/css/img/texture.png" style="position: absolute; bottom: 0; left: 0; width: 100%;" alt="">
+        <img src="https://www.columbuszoo.org/themes/tiki/css/img/branch.png" class="ghaas" style="position: absolute; bottom: 0; left: 0; width: 150px;" alt="">
+
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg for-pc" style="background-color: transparent;">
+                <a class="navbar-brand" href="INDEX.HTML"><img src="ASSETS/LOGO.jpeg" class="logo" width="160px"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto navyy">
+                        <li class="nav-item">
+                            <a class="nav-link" href="INDEX.HTML">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Animals
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color: #2F2F2F;">
+                                <a style="width: 100%;margin-left: 0; color: #838C3E;" class="dropdown-item"
+                                    href="#">Animals</a>
+                                <a style="width: 100%;margin-left: 0; color: #838C3E;" class="dropdown-item"
+                                    href="#">Water Animals</a>
+                                <a style="width: 100%;margin-left: 0; color: #838C3E;" class="dropdown-item"
+                                    href="#">Wild Animals</a>
+                                <a style="width: 100%;margin-left: 0; color: #838C3E;" class="dropdown-item"
+                                    href="#">Birds</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ABOUTUS.HTML">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="margin-right: 75px;">Feedback</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </nav>
+
+
+
+
+            <div class="menu">
+                <i class="fa-solid fa-bars menu-btn for-mob" id="menu-btn"></i>
+
+                <div class="menu-cont" id="menu" style="background-color: #2F2F2F;">
+                    <img src="ASSETS/LOGO.jpeg"
+                        style="width: 140px; left: 50%; transform: translateX(-50%); position: relative; border-radius: 10px; top: 3%;"
+                        alt="">
+
+                    <i class="fa-solid fa-xmark close-icon" id="close-menu"></i>
+
+                    <div class="container mt-5">
+                        <a href="INDEX.HTML">Home</a>
+                        <a href="">Animals</a>
+                        <a href="">Water Animals</a>
+                        <a href="">Wild Animals</a>
+                        <a href="">Birds</a>
+
+
+                        <a href="ABOUTUS.HTML">About Us</a>
+                        <a href="">Contact Us</a>
+                        <a href="">Events</a>
+                        <a href="">Feedback</a>
+                        <button
+                            style="background-color: #D96704; margin-top: 25px; border-radius: 5px; padding: 10px; left: 50%; transform: translateX(-50%); position: relative; border: none;"
+                            class="login-btn mb-5"><a href="LOGIN.HTML" style="margin-top: 0px;" class=""><i
+                                    class="fa-regular fa-user"></i> Account Login</a></button>
+                    </div>
+                    <img class="panchva-patta"
+                        src="https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/icons/foliage_sponsor_right.svg"
+                        alt="" id="patta1">
+
+                    <img class="chotha-patta"
+                        src="https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/icons/foliage_text-image_right2.svg"
+                        alt="" id="patta2">
+
+                    <img class="chatta-patta" id="patta3"
+                        src="https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/icons/foliage_cards_left.svg"
+                        alt="" style="position: fixed; bottom: 0; right: 30px; width: 150px;">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-0 py-5">
+            <div class="col-lg-6 px-5">
+                <h1 class="text-light pt-5 aboutus-text" style="opacity: 0;">ABOUT US!</h1>
+
+
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <h2 style="font-weight: 700; font-size: 28px;">Get ready for a WILD visit!</h2>
+        <p style="font-weight: 600; font-size: 22px;">Here are some of the animals you will meet during your journey to
+            the Columbus Zoo and Aquarium, home to over 10,000 animals representing 600 species. </p>
+    </div>
+
+
+    <div class="container">
+        <div class="row" style="display: flex; justify-content: center;">
+            
+
+            <div class="col-auto my-3">
+                <a href="">
+                    <div class="container outer-screen p-0" style="position: relative;">
+                        <div class="black-screen"></div>
+                        <img class="animal-imgs"
+                            src="https://marvel-b1-cdn.bc0a.com/f00000000299671/www.columbuszoo.org/sites/default/files/styles/hp_events_385x457_/public/assets/animals/aldabra%20tortoise.jpg?h=6b7a3213&itok=Zn3XeacT"
+                            alt="">
+                        <h2
+                            style="position: absolute; width: 100%; top: 80%; transform: translateY(-50%); text-align: center; color: white;">
+                            ALDABRA TORTOISE</h2>
+                    </div>
+                </a>
+            </div>
+
+            
+
+
+        </div>
+    </div>
+    <div class="container-fluid mt-5" style="background-color: #2F2F2F;">
+        <div class="row py-5">
+            <div class="col-lg-6 py-4" style="position: relative;">
+                <img class="for-pc" style="
+                position: absolute;
+                top: 0;
+                background-repeat: repeat-x;
+                width: 100%;
+                right: 0;
+                width: 10px;
+                height: 100%;"
+                    src="https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/icons/wavy-line-vertical-orange.svg"
+                    alt="">
+                <div class="row">
+                    <div class="col-6">
+                        <img style="border-radius: 10px; width: 100px; left: 50%; top: 50%; transform: translate(-50%, -50%); position: relative;"
+                            src="https://www.dallaszoo.com/wp-content/themes/dallaszoo/resources/icons/Dallas_Zoo_Logo_Vertical.svg"
+                            alt="">
+                    </div>
+                    <div class="col-6">
+                        <div class="container"
+                            style="top: 50%; transform: translateY(-50%); position: relative; text-align: start;">
+                            <p class="text-light mt-2 mb-0" style="font-weight: 700;">Central Zoo</p>
+                            <p class="text-light m-0" style="font-weight: 700;">650 S. R. L. Thornton
+                                Freeway</p>
+                            <p class="text-light m-0" style="font-weight: 700;">Dallas, TX 75203</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row mt-5" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="col-auto">
+                            <a href="ABOUTUS.HTML" class="text-center text-light" style="font-weight: 700;">About</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="text-center text-light" style="font-weight: 700;">Contact</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="text-center text-light" style="font-weight: 700;">Privacy Policy</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="text-center text-light" style="font-weight: 700;">Site Map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 py-4">
+                <h2 class=" footer-text" style="color: #838C3E; font-weight: 700;">Contact Us</h2>
+                <p class="text-light footer-text">Stay up to date with what's happening at the Dallas Zoo.</p>
+                <form action="">
+                    <input type="text" class="form-control mt-2" style="border: none;" placeholder="Enter Your Name"
+                        name="" id="">
+                    <input type="text" class="form-control mt-2" style="border: none;" placeholder="Enter Your Email"
+                        name="" id="">
+                    <textarea name="" class="form-control mt-2" style="border: none;" id="" cols="30"
+                        rows="4">Enter Your Message</textarea>
+                    <button class="bt-btn mt-3"> Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+
+
+
+        let menuBtn = document.getElementById('menu-btn');
+        let menu = document.getElementById('menu');
+        let closeMenu = document.getElementById('close-menu');
+        let patta1 = document.getElementById('patta1');
+        let patta2 = document.getElementById('patta2');
+        let patta3 = document.getElementById('patta3');
+
+        if (window.innerWidth < 991) {
+            // Your code to be executed if the screen size is less than 992 pixels
+            menuBtn.style.display = 'block';
+        } else {
+            // Your code to be executed if the screen size is 992 pixels or more
+            menuBtn.style.display = 'none';
+        }
+
+        closeMenu.style.display = 'none'
+        patta1.style.display = 'none'
+        patta2.style.display = 'none'
+        patta3.style.display = 'none'
+
+        menuBtn.addEventListener('click', () => {
+            menu.style.display = 'block'
+            menu.style.transition = '0.2s ease-in'
+            menu.style.width = '100%'
+            setTimeout(() => {
+                closeMenu.style.display = 'block'
+
+            }, 190);
+            setTimeout(() => {
+                patta1.style.display = 'block'
+                patta2.style.display = 'block'
+                patta3.style.display = 'block'
+            }, 100);
+        })
+
+        closeMenu.addEventListener('click', () => {
+            menu.style.transition = '0.2s'
+            menu.style.width = '0%'
+
+            closeMenu.style.display = 'none'
+            // menu.style.display = 'none'
+            patta1.style.display = 'none'
+            patta2.style.display = 'none'
+            patta3.style.display = 'none'
+        })
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
